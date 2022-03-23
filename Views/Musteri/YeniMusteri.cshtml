@@ -1,0 +1,26 @@
+﻿@model Stok_Uygulama.Models.Entity.TBLMusteri
+
+@{
+    ViewBag.Title = "YeniMusteri";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>YeniMusteri</h2>
+
+<form method="post">
+    <label> Musteri adı:</label>
+    @Html.TextBoxFor(x => x.ad, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.ad, "", new { @style = "color:black;" })
+    <br /><label> Musteri soyadı:</label>
+    @Html.TextBoxFor(x => x.soyad, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.soyad, "", new { @style = "color:black;" })
+    <br /><label> Şehir adı:</label>
+    @Html.TextBoxFor(x => x.sehir, new { @class = "form-control" })
+    <br /><label> Bakiyesi adı:</label>
+    @Html.TextBoxFor(x => x.bakiye, new { @class = "form-control" })
+    <br />
+
+    <br />
+
+    <button style="margin-top:20px;" class="btn btn-info"><i class="fas fa-check"></i> Ürün Ekle</button>
+</form>

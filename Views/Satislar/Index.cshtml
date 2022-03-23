@@ -1,0 +1,44 @@
+﻿@using Stok_Uygulama.Models.Entity
+@model List<TBLSatis>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<a href="/Satislar/YeniSatis" style="margin:20px 0 20px 0;" class=" btn btn-primary">Satış Ekle</a>
+<table class="table table-bordered">
+    <tr>
+        <row>
+            <th>ID</th>
+            <th>Ürün</th>
+            <th>Personel</th>
+            <th>Müşteri</th>
+            <th>Fiyat</th>
+            <th>Tarih</th>
+
+        </row>
+
+
+    </tr>
+    @foreach (var i in Model)
+    {
+<tr>
+    <td>@i.id</td>
+    <td>@i.TBLUrunler.ad</td>
+    <td>@i.TBLPersonel.ad @i.TBLPersonel.soyad</td>
+    <td>@i.TBLMusteri.ad @i.TBLMusteri.soyad </td>
+    <td>@i.fiyat</td>
+    <td>@i.tarih</td>
+
+</tr>
+    }
+</table>
+
+<script>
+function myFunction() {
+  alert("Başarıyla silindi!");
+}
+</script>
+
+

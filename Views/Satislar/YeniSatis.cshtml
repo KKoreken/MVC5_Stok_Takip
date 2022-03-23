@@ -1,0 +1,23 @@
+﻿@model Stok_Uygulama.Models.Entity.TBLSatis
+
+@{
+    ViewBag.Title = "YeniSatis";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Satis</h2>
+<form method="post">
+    <label> Ürün adı:</label>
+    @Html.DropDownListFor(x => x.TBLUrunler.id, (List<SelectListItem>)ViewBag.deger, new { @class = "form-control" })
+    <br /><label> musteri adı:</label>
+    @Html.DropDownListFor(x => x.TBLMusteri.id, (List<SelectListItem>)ViewBag.deger3, new { @class = "form-control" })
+    <br /><label> personel adı:</label>
+    @Html.DropDownListFor(x => x.TBLPersonel.id, (List<SelectListItem>)ViewBag.deger2, new { @class = "form-control" })
+    <br />
+    <label> fiyat adı:</label>
+    @Html.TextBoxFor(x => x.fiyat, new { @class = "form-control" })
+    <br />
+
+    <button style="margin-top:20px;" class="btn btn-info"><i class="fas fa-check"></i> Satışı Onayla</button>
+</form>
+

@@ -1,0 +1,27 @@
+﻿@model Stok_Uygulama.Models.Entity.TBLMusteri
+
+@{
+    ViewBag.Title = "MusteriGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Musteri Getir</h2>
+<br />
+@using (Html.BeginForm("MusteriGuncelle", "Musteri", FormMethod.Post))
+{
+
+    @Html.HiddenFor(x => x.id, new { @class = "form-control" })
+    <br />
+    <label> ad:</label>
+    @Html.TextBoxFor(x => x.ad, new { @class = "form-control" })
+    <br /><label> soyad :</label>
+    @Html.TextBoxFor(x => x.soyad, new { @class = "form-control" })
+    <br /><label> sehir :</label>
+    @Html.TextBoxFor(x => x.sehir, new { @class = "form-control" })
+    <br /><label> Bakiye :</label>
+    @Html.TextBoxFor(x => x.bakiye, new { @class = "form-control" })
+    <br />
+
+    <button style="margin-top:20px;" class="btn btn-danger"><i class="fas fa-check"></i> Kaydet</button>
+}
+

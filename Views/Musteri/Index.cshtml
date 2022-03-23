@@ -1,0 +1,44 @@
+﻿@using Stok_Uygulama.Models.Entity
+@using PagedList
+@using PagedList.Mvc
+
+
+@model PagedList.IPagedList<TBLMusteri>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2 style="text-align:center">Müşteriler</h2>
+<a href="/Musteri/YeniMusteri" class=" btn btn-primary">Musteri Ekle</a><br />
+<table class="table table-bordered">
+    <tr>
+        <row>
+            <th>ID</th>
+            <th>AD</th>
+            <th>SOYAD</th>
+            <th>Şehir</th>
+            <th>Bakiye</th>
+            <th>İşlemler</th>
+
+        </row>
+
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.ad</td>
+            <td>@item.soyad</td>
+            <td>@item.sehir</td>
+            <td>@item.bakiye</td>
+            <td><button style="border:none; background-color:transparent;" onclick="myFunction()"><a style="color:black; margin-right:10px" href="/Musteri/MusteriSil/@item.id"><i class="fas fa-trash"></i></a> </button> <a style="color:black;" href="/Musteri/MusteriGetir/@item.id"><i class="fas fa-pen"></i></a>  </td>
+        </tr>
+    }
+</table>
+@Html.PagedListPager((IPagedList)Model, sayfa => Url.Action("Index", new { sayfa }))
+<script>
+    function myFunction() {
+        alert("Başarıyla silindi!");
+    }
+</script>

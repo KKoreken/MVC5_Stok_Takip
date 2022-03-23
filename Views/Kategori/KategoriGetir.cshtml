@@ -1,0 +1,18 @@
+﻿@model Stok_Uygulama.Models.Entity.TBLKategori
+@{
+    ViewBag.Title = "KategoriGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kategori Güncelle</h2>
+<br />
+@using (Html.BeginForm("KategoriGuncelle", "Kategori", FormMethod.Post))
+{
+
+    @Html.HiddenFor(x => x.id, new { @class = "form-control" })
+    <br />
+    <label> Kategori adı:</label>
+    @Html.TextBoxFor(x => x.ad, new { @class = "form-control" })
+
+    <button style="margin-top:20px;" class="btn btn-info"><i class="fas fa-check"></i> Ekle</button>
+}

@@ -1,0 +1,32 @@
+﻿@using Stok_Uygulama.Models.Entity
+@model List<TBLKategori>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2 style="text-align:center" >Kategoriler</h2>
+<table class="table table-bordered">
+    <tr>
+        <row>
+            <th>ID</th>
+            <th>AD</th>
+            <th>İşlemler</th>
+        </row>
+        
+
+    </tr>
+    @foreach ( var i in Model)
+            {
+                <tr>
+                    <td>@i.id</td>
+                    <td>@i.ad</td>
+                    <td><button style="border:none; background-color:transparent;" onclick="myFunction()" ><a  style="color:black; margin-right:10px" href="/Kategori/KatSil/@i.id"><i class="fas fa-trash"></i></a> </button> <a style="color:black;" href="/Kategori/KategoriGetir/@i.id"><i class="fas fa-pen"></i></a>  </td>
+                </tr>
+            }
+</table>
+<a href="/Kategori/KategoriEkle" class=" btn btn-primary">Kategori Ekle</a>
+<script>
+function myFunction() {
+  alert("Başarıyla silindi!");
+}
+</script>

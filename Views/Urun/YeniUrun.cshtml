@@ -1,0 +1,26 @@
+﻿@model Stok_Uygulama.Models.Entity.TBLUrunler
+@{
+    ViewBag.Title = "YeniUrun";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>YeniUrun</h2>
+<br />
+<form method="post">
+    <label> Ürün adı:</label>
+    @Html.TextBoxFor(x => x.ad, new { @class = "form-control" })
+    <br /><label> marka adı:</label>
+    @Html.TextBoxFor(x => x.marka, new { @class = "form-control" })
+    <br /><label> kategori adı:</label>
+    @Html.DropDownListFor(x=>x.TBLKategori.id,(List<SelectListItem>)ViewBag.deger,new { @class = "form-control" })
+    <br /><label> stok adı:</label>
+    @Html.TextBoxFor(x => x.stok, new { @class = "form-control" })
+    <br />
+    <label> satış adı:</label>
+    @Html.TextBoxFor(x => x.satifFiyati, new { @class = "form-control" })
+    <br /><label> alış adı:</label>
+    @Html.TextBoxFor(x => x.alisFiyati, new { @class = "form-control" })
+    <br />
+
+    <button style="margin-top:20px;" class="btn btn-info"><i class="fas fa-check"></i> Ürün Ekle</button>
+</form>
