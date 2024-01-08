@@ -36,12 +36,12 @@ Projenizin dosya yapısını açıklayan bir bölüm ekleyebilirsiniz. Örneğin
 
 ## Kullanım
 
-<ul style='list-style-type:number' >
+<ol style='list-style-type:number' >
   <li>Veriler Google Drive'a yüklenir</li>
   <li>Google Colab açılır</li>
   <li>Ipynb dosyaları içeri aktarılır</li>
   <li>Adım adım kod satırları çalıştırılır</li>
-</ul>
+</ol>
 
 
 
