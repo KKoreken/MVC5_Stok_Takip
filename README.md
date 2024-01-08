@@ -33,11 +33,10 @@ Projenizin dosya yapısını açıklayan bir bölüm ekleyebilirsiniz. Örneğin
 
 
 
-
 ## Kullanım
 
 <ol style='list-style-type:number' >
-  <li>Veriler Google Drive'a yüklenir</li>
+  <li>Veriler Google Drive'a yüklenir (<a href='https://drive.google.com/drive/folders/1s7Q1sQuQM2brcZ__LAt53_zmvX8Fb_Ou?usp=drive_link'>Verileri indirmek için tıklayın</a>) </li>
   <li>Google Colab açılır</li>
   <li>Ipynb dosyaları içeri aktarılır</li>
   <li>Adım adım kod satırları çalıştırılır</li>
@@ -52,3 +51,5 @@ Projenizin dosya yapısını açıklayan bir bölüm ekleyebilirsiniz. Örneğin
 - Yusuf Tural                - 1190505801@ogr.klu.edu.tr
 - Halil Şafak Şimşek         - 1200505063@ogr.klu.edu.tr
 - Kadir Köreken              - 1200505060@ogr.klu.edu.tr
+
+
