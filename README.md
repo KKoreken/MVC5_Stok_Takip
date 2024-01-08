@@ -48,7 +48,7 @@ Projenizin dosya yapısını açıklayan bir bölüm ekleyebilirsiniz. Örneğin
 
 ## İletişim
 
-Ahmet Berkay Ulutaş        - 1190505002@ogr.klu.edu.tr
-Yusuf Tural                - 1190505801@ogr.klu.edu.tr
-Halil Şafak Şimşek         - 1200505063@ogr.klu.edu.tr
-Kadir Köreken              - 1200505060@ogr.klu.edu.tr
+- Ahmet Berkay Ulutaş        - 1190505002@ogr.klu.edu.tr
+- Yusuf Tural                - 1190505801@ogr.klu.edu.tr
+- Halil Şafak Şimşek         - 1200505063@ogr.klu.edu.tr
+- Kadir Köreken              - 1200505060@ogr.klu.edu.tr
